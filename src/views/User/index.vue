@@ -194,7 +194,7 @@ export default {
 			}).then(() => {
 				const id = row.id
 				this.$http
-					.post('/user/del', {
+					.post('/user/del?id=' + id, {
 						params: { id },
 					})
 					.then(() => {
